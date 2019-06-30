@@ -14,6 +14,15 @@ gem 'rack-cors'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem "swagger-blocks"
+
+gem "openstax_swagger", github: 'openstax/swagger-rails', ref: '0ad77d306d2'
+
+gem 'avro-builder'
+
+# Versioned API tools
+gem "versionist"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
